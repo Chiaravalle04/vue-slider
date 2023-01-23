@@ -31,7 +31,7 @@
                         <div class="next" @click="nextCarousel"></div>
 
                         <div v-for="(item, index) in slides" :key="index">
-                            <div class="thumb" :class="{ active: counter === index }" >
+                            <div class="thumb" :class="{ active: counter == index }" @click="counter = index">
                                 <img :src="item.image" :alt="item.title"  />
                             </div>
                         </div>
